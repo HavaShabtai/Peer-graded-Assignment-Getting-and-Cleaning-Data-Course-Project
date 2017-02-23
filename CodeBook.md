@@ -124,7 +124,7 @@ There are 5 questions to the project: <br />
 
 Description of how run_analysis.R performs the above steps:
 ==============================================
-loads the librareis **library(utils)** and **library(dplyr)**. <br />
+loads the librareis **library(utils)** and **library(dplyr)**. If one haven't installed yet these libraries it is possible to install them with the command **install.packages("package_name")**<br />
 concatinate the training and the test sets with the command **rbind** and then concatenate the Subject, Activity and Feature columns with the **cbind** command. <br />
 Load the features labels and extract the mean and standard deviation column names with the command **gerp** and extract the right columns with the command **subset**. <br />
 Load activity labels and then use the command **merge** to merge the tidy data set with the activity label. The result needed to be rearrange again in the right order and that is been done with the command **select**. <br />
