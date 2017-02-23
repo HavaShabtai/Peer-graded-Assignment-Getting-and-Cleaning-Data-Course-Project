@@ -5,11 +5,11 @@ In this assignment we retrieve data for the project from the website that is a M
 
 The code contained in the script named "run_analysis.R", can be called from inside an R session. For example, when launching a new R session and writing in the command line:
 
-> source("run_analysis.R")
+\> source("run_analysis.R")
 
 This will read and execute the script that performs certain operations on a data set, as explained below, in order to prepare tidy data that can be used for later analysis. The final structure and content of the tidy data set is partly detailed in the file "CodeBook.md" and can be viewed with the command
 
-> View(Accelerometers_Mean)
+\> View(Accelerometers_Mean)
 
 written to the command line after running the script named "run_analysis.R".
 
