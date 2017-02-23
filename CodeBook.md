@@ -112,9 +112,9 @@ tBodyGyroJerkMean <br />
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-Transformation details
+Project details
 ======================
-There are 5 questions to the project: <br />
+There are 5 separate instructions to the project: <br />
 
 1. Merges the training and the test sets to create one data set. <br />
 2. Extracts only the measurements on the mean and standard deviation for each measurement. <br />
