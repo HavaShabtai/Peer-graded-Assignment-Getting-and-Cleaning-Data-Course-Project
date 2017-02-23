@@ -111,3 +111,22 @@ tBodyGyroMean <br />
 tBodyGyroJerkMean <br />
 
 The complete list of variables of each feature vector is available in 'features.txt'
+
+Transformation details
+======================
+There are 5 parts to the project:
+
+1.Merges the training and the test sets to create one data set.
+2.Extracts only the measurements on the mean and standard deviation for each measurement.
+3.Uses descriptive activity names to name the activities in the data set
+4.Appropriately labels the data set with descriptive variable names.
+5.From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Description of how run_analysis.R performs the above steps:
+==============================================
+loads the librareis library(utils) and library(dplyr).
+concatinate the training and the test sets with the command rbind and then concatenate the train and test tables by rows with the rbind command.
+Load the features labels and extract the mean and standard deviation column names with the command gerp and extract the right columns with the command subset.
+Load activity labels and then use the command merge to merge the tidy data set with the activity label. The result needed to be set again in the right order and that is been done with the command select.
+Using the gsub command we appropriately labels the data set with descriptive variable names.
+In the last step we use a special function from the dplyr package, summarise_each, in order to aggregate the information in wanted way. Since the summarise_each function changes the names of the columns, a renaming is needed.
