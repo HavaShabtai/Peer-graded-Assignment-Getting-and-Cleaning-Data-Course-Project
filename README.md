@@ -13,6 +13,8 @@ This will read and execute the script that performs certain operations on a data
 
 written to the command line after running the script named "run_analysis.R".
 
+Description the script run_analysis.R
+======================================
 The R script called run_analysis.R does the following:
 
 1. Merges the training and the test sets to create one data set.
@@ -20,3 +22,11 @@ The R script called run_analysis.R does the following:
 3. Uses descriptive activity names to name the activities in the data set
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+Description of how run_analysis.R performs the above steps:
+===========================================================
+1. Loads the librareis **library(utils)** and **library(dplyr)**. If one haven't installed yet these libraries it is possible to install them with the command **install.packages("package_name")**. Concatinate the training and the test sets with the command **rbind** and then concatenate the Subject, Activity and Feature columns with the **cbind** command. <br />
+2. Load the features labels and extract the mean and standard deviation column names with the command **gerp** and extract the right columns with the command **subset**. <br />
+3. Load activity labels and then use the command **merge** to merge the tidy data set with the activity label. The result needed to be rearrange again in the right order and that is been done with the command **select**. <br />
+4. Using the **gsub** command we appropriately labels the data set with descriptive variable names. <br />
+5. In the last step we use a special function from the dplyr package, **summarise_each**, in order to aggregate the information in wanted way. Since the summarise_each function changes the names of the columns, a renaming is needed.
