@@ -113,7 +113,7 @@ tBodyGyroJerkMean <br />
 The complete list of variables of each feature vector is available in 'features.txt'
 
 Project details
-======================
+=================
 There are 5 separate instructions to the project: <br />
 
 1. Merges the training and the test sets to create one data set. <br />
@@ -123,7 +123,7 @@ There are 5 separate instructions to the project: <br />
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. <br />
 
 Description of how run_analysis.R performs the above steps:
-==============================================
+===========================================================
 1. Loads the librareis **library(utils)** and **library(dplyr)**. If one haven't installed yet these libraries it is possible to install them with the command **install.packages("package_name")**. Concatinate the training and the test sets with the command **rbind** and then concatenate the Subject, Activity and Feature columns with the **cbind** command. <br />
 2. Load the features labels and extract the mean and standard deviation column names with the command **gerp** and extract the right columns with the command **subset**. <br />
 3. Load activity labels and then use the command **merge** to merge the tidy data set with the activity label. The result needed to be rearrange again in the right order and that is been done with the command **select**. <br />
