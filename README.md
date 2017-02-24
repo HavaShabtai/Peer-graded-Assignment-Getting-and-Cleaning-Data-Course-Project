@@ -13,7 +13,7 @@ This will read and execute the script that performs certain operations on a data
 
 written to the command line after running the script named "run_analysis.R".
 
-Description the script run_analysis.R
+Description of the script run_analysis.R
 ======================================
 The R script called run_analysis.R does the following:
 
